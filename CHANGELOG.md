@@ -1,3 +1,6 @@
-## 0.0.1
+## 0.1.0
 
-* TODO: Describe initial release.
+- Initial release
+- Functional Thermometer Widget
+- Highly Customizable 
+- All platforms support (android, ios, web, desktop)

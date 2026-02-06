@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thermometer/src/thermometer_painter.dart';
+import 'package:thermometer_widget/src/thermometer_painter.dart';
 
 class Thermometer extends StatefulWidget {
   final double height;

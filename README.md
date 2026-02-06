@@ -59,7 +59,7 @@ import 'package:thermometer/thermometer.dart';
 
 ### Usage Examples
 
-#### Example 1
+#### Example 
 Here is a basic example.
 It consists of thermometer widget and a button. On clicking button, the value of temperature changes and liquid animates from last to new temperature.
 
@@ -138,72 +138,5 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 
 ![Thermometer example](https://github.com/Ahmed-Yasir1147/Thermometer/blob/main/assets/images/example_1.gif?raw=true) 
-
-#### Example 2
-Here is another example which creates a static thermometer aiming to use different properites provided by the widget.
-
-```dart
-import 'package:flutter/material.dart';
-import 'package:thermometer/thermometer.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const MyHomePage(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    final Size(:height, :width) = MediaQuery.of(context).size;
-    return Scaffold(
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.only(bottom: height * 0.1),
-          child: Thermometer(
-            height: 450,
-            temperatureC: 25,
-            showScreenTemperatureInFahrenHeit: true,
-            backgroundGradient: LinearGradient(
-              colors: [Colors.grey.shade400, Colors.grey.shade800],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            boundaryColor: Colors.grey.shade600,
-            duration: const Duration(milliseconds: 400),
-            screenColor: Colors.grey.shade100,
-            screenTextColor: Colors.red,
-            readingLinesColor: Colors.white,
-            textColor: Colors.white,
-            tubeColor: Colors.white,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-```
-
-![Thermometer example](https://github.com/Ahmed-Yasir1147/Thermometer/blob/main/assets/images/example_2.png?raw=true) 
-
-
 
 
